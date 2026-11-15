@@ -11,11 +11,12 @@ Next.js 16 (App Router) · React 19 · Tailwind CSS · Supabase (Postgres + Auth
    4. `supabase/migrations/004_vitals.sql`
    5. `supabase/migrations/005_diagnostics.sql`
    6. `supabase/migrations/006_philhealth_claims.sql`
-   7. *(optional demo data)* `supabase/seed.sql`, then `supabase/seed_features.sql`
+   7. `supabase/migrations/007_security_hardening.sql`
+   8. *(optional demo data)* `supabase/seed.sql`, then `supabase/seed_features.sql`
 3. `cp .env.example .env.local` and paste your project URL + anon key (Project Settings → API)
 4. `npm install && npm run dev` → http://localhost:3000
-5. Click **Create an admin account**. The **first** account is approved automatically; later sign-ups
-   wait until an approved admin approves them in **Settings → Administrator access**.
+5. Click **Create an admin account**. New accounts are never auto-approved. Approve your own first account with the SQL snippet at the bottom of
+   `007_security_hardening.sql`; later sign-ups are approved in **Settings → Administrator access**.
 
 Already ran `schema.sql` earlier? Don't run it again — just run the new migration files you haven't run yet.
 
