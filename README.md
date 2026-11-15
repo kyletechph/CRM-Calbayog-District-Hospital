@@ -20,6 +20,7 @@ Next.js 16 (App Router) · React 19 · Tailwind CSS · Supabase (Postgres + Auth
 
 Already ran `schema.sql` earlier? Don't run it again — just run the new migration files you haven't run yet.
 
+
 ## Modules
 | Area | What it does |
 | --- | --- |
