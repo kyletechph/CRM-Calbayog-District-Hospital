@@ -44,3 +44,4 @@ Already ran `schema.sql` earlier? Don't run it again — just run the new migrat
 - PDFs (records, prescriptions, billing statements) are generated on the server with `pdf-lib`.
   The billing statement is not an official receipt.
 - Vital-sign highlights use simple adult screening ranges as a prompt for a second look, not a diagnosis.
+
