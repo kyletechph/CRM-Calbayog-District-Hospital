@@ -15,7 +15,6 @@ export default async function Login(props: { searchParams: Promise<{ error?: str
         <Field label="Password" name="password"><TextInput name="password" type="password" required placeholder="Enter your password" autoComplete="current-password" /></Field>
         <button className="btn-primary w-full">Sign in →</button>
       </form>
-      <p className="mt-5 text-center text-sm text-ink-600">New administrator? <Link href="/register" className="font-semibold text-brand-600">Create an admin account →</Link></p>
       <p className="mt-6 border-t border-slate-100 pt-4 text-xs text-ink-600">For authorized hospital administrators only. Your session is protected and access is monitored.</p>
     </AuthShell>
   );
